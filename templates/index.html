@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AI Console Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI 콘솔 어시스턴트</h1>
+      <div class="subtitle">콘솔 스타일로 대화하고, 일정과 날씨를 물어보세요.</div>
+    </header>
+
+    <main>
+      <div id="console" class="console"></div>
+      <form id="chatForm" class="input-area">
+        <input id="message" autocomplete="off" placeholder="여기에 입력 (예: 오늘 서울 날씨 어때? / 일정 추가: 수학 공부 내일 4시)" />
+        <button type="submit">전송</button>
+      </form>
+    </main>
+
+    <footer>
+      <small>기상청 데이터를 사용합니다. (단기예보)</small>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
